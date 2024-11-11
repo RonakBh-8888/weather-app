@@ -19,6 +19,8 @@ const ForecastDetails: React.FC = () => {
       {weatherData && (
         <WeatherCard
           cityName={city}
+          feelLike={forecastData[selectedForecast].main.feels_like}
+          main={forecastData[selectedForecast].weather[0].main}
           temperature={forecastData[selectedForecast].main.temp}
           humidity={forecastData[selectedForecast].main.humidity}
           windSpeed={forecastData[selectedForecast].wind.speed}

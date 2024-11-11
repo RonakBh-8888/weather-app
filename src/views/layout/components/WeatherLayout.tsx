@@ -20,6 +20,8 @@ const Weatherlayout: React.FC = () => {
       {weatherData && (
         <WeatherCard
           cityName={city}
+          feelLike={weatherData.main.feels_like}
+          main={weatherData.weather[0].main}
           temperature={weatherData.main.temp}
           humidity={weatherData.main.humidity}
           windSpeed={weatherData.wind.speed}
