@@ -44,7 +44,7 @@ const WeatherCard: React.FC<CurrentWeatherProps> = ({
       <Typography
         variant="h5"
         style={{ fontWeight: 700 }}
-      >{`${cityName} Weather`}</Typography>
+      >{forecastData.length ? `${cityName || 'current'} Weather` : `Forecast`}</Typography>
       <Grid2 style={{ display: "flex", flexDirection: "row" }}>
         {" "}
         <img
